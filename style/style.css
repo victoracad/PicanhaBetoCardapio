@@ -1,0 +1,387 @@
+/*TODA A PAGINA*/
+@media (max-width: 480px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nerko One", cursive
+}
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff; /* Cor de fundo para realçar o elemento */
+    flex-direction: column;
+}
+/*TODA A PAGINA*/
+
+
+
+/*BARRA DE NAVEGAÇÃO*/
+nav{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+}
+#img_logo{
+    width: 50px;
+    height: 50px;
+}
+
+h1{
+  font-family: "Nerko One", cursive;
+  font-size: 35px;
+  color: #b32525;
+}
+
+
+/* From Uiverse.io by tarantino421 
+  ICONE DE HAMBURGUER*/ 
+.buttons__burger {
+  --size: 2.2rem;
+  --clr: #b32525;
+  width: var(--size);
+  height: calc(0.7 * var(--size));
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.buttons__burger #burger {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons__burger span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 3px solid var(--clr);
+  background-color: var(--clr);
+  transition: 0.15s ease-in-out;
+}
+
+.buttons__burger span:nth-of-type(1) {
+  top: 0;
+  right: 0;
+  transform-origin: right center;
+}
+
+.buttons__burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.buttons__burger span:nth-of-type(3) {
+  top: 100%;
+  right: 0;
+  transform-origin: right center;
+  transform: translateY(-100%);
+}
+
+.buttons__burger #burger:checked ~ span:nth-of-type(1) {
+  transform: translateY(-30%) rotate(40deg);
+  width: 50%;
+  top: 50%;
+}
+
+.buttons__burger #burger:checked ~ span:nth-of-type(3) {
+  transform: translateY(-70%) rotate(-40deg);
+  width: 50%;
+  top: 50%;
+}
+/*ICONE DE HAMBURGUER*/
+
+/*AREA DA BARRA LATERAL*/
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -310px;
+  width: 310px;
+  height: 100vh;
+  background-color: #b32525;
+  transition: left 0.3s ease; 
+  box-sizing: border-box;
+  z-index: 11;
+  
+}
+.head{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+.head span{
+  justify-content: center;
+  font-size: 35px;
+  color: yellow;
+}
+.head p{
+  font-size: 30px;
+  
+  color: #fff;
+}
+.comanda{
+  color: white;
+  
+}
+#hrSd{
+  margin-top: 10px;
+}
+
+.categorias{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.opcoes{
+  margin-top: 30px;
+  padding: 10px;
+}
+.opcoes h2{
+  font-size: 30px;
+  color: yellow;
+}
+.categorias a{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+#moreDetail{
+  color: white;
+  font-size: 30px;
+}
+
+#toggle-sidebar:checked ~ .sidebar{
+  left: 0px;
+}
+
+#whiteDiv{
+  width: 100.5%;
+  height: 100px;
+  background-color: white;
+  border-radius: 0px 0px 50% 50%;
+}
+
+/*AREA DA BARRA LATERAL*/
+
+
+
+/*BARRA DE NAVEGAÇÃO*/
+
+
+
+
+/*PARTE PRINCIPAL DO CARDAPIO*/
+.main_menu{
+  padding: 5%;
+}
+/*OFERTA DO DIA STYLE*/
+  .offerDay{
+      margin-top: 20%;
+  }
+  #offerDayimg{
+      width: 100%;
+      border-radius: 5%;
+  }
+/*OFERTA DO DIA STYLE*/
+
+
+.categoria{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: flex;
+    width: 176px;
+    height: 0;
+    height: auto;
+    border-radius: 5%;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px; /* Ajuste a posição do texto */
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.438); /* Fundo semi-transparente */
+    color: #fff; /* Cor do texto */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+/*PARTE PRINCIPAL DO CARDAPIO*/
+
+
+/*BARRA DE NAVEGAÇÃO BOTTOM*/
+/* From Uiverse.io by eslam-hany */ 
+.button-container {
+  display: flex;
+  background-color: #b32525;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+  position: fixed;
+  margin-top: 94vh;
+  z-index: 20;
+}
+
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 25px;
+  color: black;
+}
+/*BARRA DE NAVEGAÇÃO BOTTOM*/
+
+
+
+
+
+
+/*PARTE DO RODAPÉ*/
+footer{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  gap: 10px;
+}
+#space{
+  width: 100%;
+  height: 200px;
+  background-color: #0072b1;
+}
+/* From Uiverse.io by vinodjangid07 */ 
+.card {
+  width: 90%;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  border-radius: 5%;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: #b32525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*PARTE DO RODAPÉ*/
+}
+
+
+

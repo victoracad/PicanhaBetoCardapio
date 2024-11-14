@@ -1,0 +1,71 @@
+@media (max-width: 480px) {
+    #PratosBovinos{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .cardPrato{
+        width: 90%;
+        height: 100px;
+        background-color: rgb(241, 239, 239);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.3);
+        position: relative;
+        padding: 22px;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+    }
+    .tituloDesc{
+        font-size: 24px;
+        color: black;
+        font-weight: bolder;
+    }
+    .servemDesc{
+        font-size: 18px;
+        color: black;
+    }
+    .precoDesc{
+        font-size: 25px;
+        color: yellowgreen;
+        font-weight: 900;
+    }
+    
+    .imgPrato img{
+        width: 100px;
+    }
+    .numPrato{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: #b32525;
+        border-radius: 0px 0px 0px 10px;
+        left: 0%;
+        top: 81%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    .servem{
+        display: flex;
+        flex-direction: row;
+        /*border: 1px solid black;*/
+    }
+    
+    .servem img{
+        width: 20px;
+    
+    }
+}
